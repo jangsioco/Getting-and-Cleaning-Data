@@ -38,8 +38,8 @@ names(mydata.filtered) <- gsub('-std', 'Std', names(mydata.filtered))
 names(mydata.filtered) <- gsub('[-()]', '', names(mydata.filtered))
 
 # aggregate by activity and subject, and then remove the group columns
-mydata.agg <- aggregate(mydata.filtered, by = list(mydata.filtered$subject, mydata.filtered$activity_code), FUN = "mean")
-mydata.agg <- mydata.agg[,3:83] 
+library(dpylr)
+mydata.agg <- mydata.filtered %>% group_by(activity_code,subject) %>% summarise_each(funs(mean))
 
 # add activity lables and then finally remove the activity_code column
 mydata.comp <- merge(activity_lables, mydata.agg, by.x = "code", by.y = "activity_code")
