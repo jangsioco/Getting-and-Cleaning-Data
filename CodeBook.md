@@ -4,13 +4,13 @@ here's a listing and some explanation of the columns found in tidyData.txt
 
 ## Identifiers
 
-* activityName - the activity label, which can be either of the following
-..* WALKING
-..* WALKING_UPSTAIRS
-..* WALKING_DOWNSTAIRS
-..* SITTING
-..* STANDING
-..* LAYING
+* activityName - the activity label, which can be either of the following:
+... WALKING
+... WALKING_UPSTAIRS
+... WALKING_DOWNSTAIRS
+... SITTING
+... STANDING
+... LAYING
 * subject - each row identifies the subject who performed the activity (no names). its range is from 1 to 30
 
 ## Measurements (mean value rolled up to activityName and subject level)
