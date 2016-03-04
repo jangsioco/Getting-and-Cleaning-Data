@@ -1,6 +1,8 @@
 # Getting and Cleaning Data Course Project
 
-This is the course project for - Getting and Cleaning Data. The script - `run_analysis.R`, does the following:
+This is the course project for - Getting and Cleaning Data. For the script to work, you need to download the zip file and copy all files on the current working directory (no subdirectories).
+
+The script - `run_analysis.R`, does the following:
 
 1. Loads the feature, activity labels, and activity data
 2. Assigns column names on activity data
